@@ -5,34 +5,35 @@ a{
     text-decoration:none;
     color: white;
 }
-.navbar{
+.header{
     display: flex;
     justify-content: center;
     height:15vh;    
     width: 100vw;
-    background-color: #333333;
+    background-color: #313131;
     position: fixed;
+    z-index: 5;
 }
-.nav-container{
+.header-container{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 90%;
 }
-.nav-box{
+.header-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 100%;
 }
-.nav-faixa{
+.header-faixa{
     width: 100%;
     height: 4px;
     background-color: #f76300;
 }
-.nav-logo{
-    width: 25vw;
+.header-logo{
+    width: 25%;
 }
 ul{
     display: flex;
@@ -45,20 +46,15 @@ li{
     font: 500 23px Roboto, sans-serif;
     color: white;
 }
-li:hover{
-    color: #F76300;
-    cursor: pointer;
-}
 .drop{
-    position: relative;
     display: inline-block;
 }
 .drop-child{
     display: none;
     position: absolute;
-    right: 0vw;
-    width: 120px;
-    height: 100px;
+    right: 6vw;
+    width: 130px;
+    height: 120px;
     background-color: #333333;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -70,18 +66,24 @@ li:hover{
     align-items: center;
     justify-content: space-evenly;
 }
-.a-lista{
-font: 600 23px Archivo, sans-serif;
-}
-.a-lista:hover{
+a:hover{
+
     color: #F76300;
-}
-@keyframes dropar-lista{
-    from{
-        opacity: 0.2;
-        background-color: white;
-    }to{
-        opacity: 1; 
-        background-color: #333333;
+    transform: scale(1.1);
+        cursor: pointer;
+    }
+    .a-lista{
+    font: 600 23px Roboto, sans-serif;
+    }
+    .a-lista:hover{
+        color: #F76300;
+    }
+    @keyframes dropar-lista{
+        from{
+            opacity: 0.2;
+            background-color: white;
+        }to{
+            opacity: 1; 
+        background-color: #313131;
     }
 }
