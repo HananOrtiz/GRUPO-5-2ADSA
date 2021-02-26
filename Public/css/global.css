@@ -8,7 +8,7 @@ a{
 .navbar{
     display: flex;
     justify-content: center;
-    height:17vh;    
+    height:15vh;    
     width: 100vw;
     background-color: #333333;
     position: fixed;
@@ -19,7 +19,7 @@ a{
     height: 100%;
     width: 90%;
 }
-.nav-box1{
+.nav-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@ li:hover{
     color: #F76300;
     cursor: pointer;
 }
-.drop1{
+.drop{
     position: relative;
     display: inline-block;
 }
@@ -63,7 +63,7 @@ li:hover{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.drop1:hover .drop-child{
+.drop:hover .drop-child{
     animation: dropar-lista 0.1s linear;
     display: flex;
     flex-direction: column;
