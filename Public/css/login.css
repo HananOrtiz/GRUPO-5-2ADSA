@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(190, 190, 190);
+    font-size: 12px;
+    margin: 0;
+}
+/*Corpo*/
+.box {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.425);
+    display: flex;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 25%;
+}
+.cardBox {
+    width: 50%;
+    margin: 10px 0 5px 0;
+}
+.cardBox input {
+    margin-bottom: 5px;
+}
+.cardBox p {
+    font-size: 16px;
+}
+.cardBox button {
+    background: greenyellow;
+}
+.cardBox button.cadastro {
+    background: red;
+}
+/*Footer*/
+footer {
+    height: 30%;
+    background: orange;
+    display: flex;
+}

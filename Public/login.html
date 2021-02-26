@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>login V1</title>
+</head>
+<body>
+        <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-box1">
+                <img class="nav-logo" src="./css/img/logo.png">
+                <ul>
+                    <li>
+                        Home   
+                    </li>
+                    <span style="color: white;">|</span>
+                    <li class="drop1">
+                       Login 
+                    </li>
+                    <span style="color: white;">|</span>
+                    <li class="drop1">
+                      <a href="">Empresa</a> 
+                        <i  class="fas fa-sort-down">
+                            <div class="drop-child">
+                                <a href=""><span class="a-lista">Serviços</span></a>
+                                <a href=""><span class="a-lista">Empresa</span></a>
+                            </div>
+                        </i>
+                    </li>
+                    <span style="color: white;">|</span>
+                </ul>
+            </div>
+            <div class="nav-faixa"></div>
+        </div>
+    </div>
+    <main>
+        <div class="box">
+            <div class="cardBox">
+                <h2>Login</h2>
+                <input type="text" placeholder="Digite seu E-mail"> <br>
+                <input type="text" placeholder="Digite sua senha"> <br>
+            </div>
+
+            <div class="cardBox cadastro">
+                <div style="display: none" id="telaDeCadastro">
+                    <p>E-mail</p>
+                    <input type="text" placeholder="Digite seu email">
+                    <p>CPF</p>
+                    <input type="text" placeholder="Digite seu CPF">
+                    <p>Senha</p>
+                    <input type="text" placeholder="Digite sua senha">
+                    <input type="text" placeholder="Digite a senha novamente"> <br>
+                    <button onclick="cadastroFinish()">
+                        Terminei!
+                    </button>
+                </div>
+                <div id="esconderLogin">
+                    <button>
+                        Entrar
+                    </button>
+                    <button onclick="cadastro()" class="cadastro">
+                        Cadastrar!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>Acabou o site</h1>
+        <ul> Contato
+            <li>Entra em call e me chama no disc</li>
+            <li>Segue o passo de cima, ótario kkkk</li>
+        </ul>
+    </footer>
+</body>
+</html>
+<script>
+    function cadastro() {
+        telaDeCadastro.style.display = 'block';
+        esconderLogin.style.display = 'none';
+    }
+    function cadastroFinish() {
+        telaDeCadastro.style.display = 'none';
+        esconderLogin.style.display = 'block';
+    }
+</script>
