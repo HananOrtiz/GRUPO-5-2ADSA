@@ -5,11 +5,17 @@
     text-decoration: none;
     list-style-type: none;
 }
-.body{
-    background-color: gray;
+body{
+    background-image: url(./img/fundoLogin.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  a{
-     text-decoration:none;
      color: white;
  }
  header{
@@ -18,7 +24,6 @@
      height: 12vh;    
      width: 100vw;
      background-color: #333333;
-     position: fixed;
  }
  .header-container{
      display: flex;
@@ -92,14 +97,60 @@
          background-color: #333333;
      }
  }
+
  .main {
-     background-color: white;
-     width: 100%;
-     height: 720px;
- }
- .main-box {
-     background-color: black;
+     background-color: rgba(0, 0, 0, 0.800);
+     margin-top: 80px;
+     height: 430px;
+     width: 400px;
      display: flex;
      align-items: center;
-     height: 300px;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 10px;
+     text-align: center;
+ }
+ .p-main {
+     text-align: center;
+     color: #f76300;
+     font-size: 25px;
+     margin-bottom: 35px;
+     font-weight: bold;
+     font-style: italic;
+ }
+ .text-main {
+     color: white;
+     font-size: 18px;
+     text-align: start;
+     font-style: italic;
+ }
+ .label-main {
+     color: white;
+ }
+
+ .text-main-box {
+     text-align: center;
+     color: white;
+     margin-top: 20px;
+    }
+ .input-main{
+    padding: 6px;
+    width: 200px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #f76300;
+    background-color: transparent;
+ }
+ input{
+    color: white;
+ }
+ .main-button {
+    font-weight: bold;
+    padding: 8px;
+    width: 110px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #f76300;
+    color: white;
  }
